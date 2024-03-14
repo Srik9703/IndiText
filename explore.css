@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 20px 20px 20px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+.nav-bar {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(26, 33, 32, 0.02);
+  height: 80px;
+  margin-bottom: 500px;
+  width: 100%;
+  margin-left: 0%;
+}
+body {
+  /* background-color: rgba(0, 0, 0, 0.881);  */
+  background-image: url("./explore\ bg.png");
+  background-position: center;
+  background-attachment: fixed;
+  height: 90vh;
+  width: 90%;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  margin-top: 20%;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  margin-left:80%;
+  transform-style: preserve-3d;
+  animation: animate 22s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: perspective(1500px) rotateY(0deg);
+  }
+  0% {
+    transform: perspective(1500px) rotateY(360deg);
+  }
+}
+
+.box div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--v) * 45deg)) translateZ(300px);
+  -webkit-box-reflect: below 0px
+    linear-gradient(transparent, transparent, rgba(19, 214, 232, 0.267));
+}
+.box div img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.spin {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: perspective(1500px) rotateY(0deg);
+    -webkit-box-reflect: below 0px
+      linear-gradient(transparent, transparent, rgba(22, 158, 195, 0.267));
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: perspective(1500px) rotateY(360deg);
+    -webkit-box-reflect: below 0px
+      linear-gradient(transparent, transparent, rgba(11, 187, 236, 0.267));
+  }
+}
+.bttn1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: rgb(19, 12, 231);
+  background-color: rgba(210, 224, 231, 0.5);
+
+  border-radius: 30px;
+  margin-top: 80%;
+  margin-left: 70pcpx;
+
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border-top-right-radius: 0px;
+  /* transition-property: transform;
+    transition-duration:0.3s ;
+    transition-timing-function: ease-in-out;
+    transition-delay:0s ; */
+
+  /* transition: transform 0.3 s ease 0s; */
+  /* transition: transform 0.3s,background-color 0.3s , color 0.3s; */
+  transition: all 0.3s;
+}
+.bttn1:hover {
+  transform: translateY(-10px);
+  background-color: rgb(202, 222, 229);
+  color: rgb(88, 30, 247);
+  border: 10px solid rgb(217, 241, 4);
+}
+.bttn2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  padding: 0.5em 1em;
+  color: rgb(231, 12, 132);
+  background-color: rgb(72, 168, 195);
+
+  border-radius: 35px;
+  margin-top: 40%;
+  margin-left: 10%;
+  margin-top: 70%;
+  display: inline-block;
+  background: linear-gradient(45deg, #87adfe, #ff77cd);
+  box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+  border-top-right-radius: 0px;
+  transition: all 0.3s;
+}
+.bttn2:hover {
+  transform: translateY(-10px);
+  background-color: rgb(209, 224, 230);
+  color: rgb(49, 183, 231);
+  border: 10px solid rgb(3, 252, 252);
+}
+#card-1 {
+  background-image: url("./txtpic.png");
+
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  margin-left: 15%;
+
+  background-size: cover;
+}
+#card-2 {
+  background-image: url("./pdfpic.png");
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  margin-left: 15%;
+
+  background-size: cover;
+}
+#card-3 {
+  background-image: url("./docpic.png");
+  height: 200px;
+  width: 400px;
+  border-radius: 10%;
+  margin-left: 15%;
+
+  background-size: cover;
+}
+.cards {
+  display: flex;
+  margin-bottom: -80%;
+  margin-left: -70%;
+}
+.headings {
+  display: flex;
+  margin-bottom: -110%;
+  margin-left: -80%;
+}
