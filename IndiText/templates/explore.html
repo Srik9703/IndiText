@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="./explore.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <style>
+    .exit{
+      display: flex;
+      margin-right: 4px;
+    }
+  </style>
+<body>
+  <div class="nav-bar">
+    <img src="./logo1.png" alt="logo" height="150px" width="150px" style="margin-top: -35px;"/>
+    
+ 
+  </div>
+ 
+  
+    <div class="box">
+    <div style="--v: 1;"> <img src="./1.png"> </div>
+    <div style="--v: 2;"> <img src="./2.png"> </div>
+    <div style="--v: 3;"> <img src="./3.png"> </div>
+    <div style="--v: 4;"> <img src="./4.png"> </div>
+    <div style="--v: 5;"> <img src="./5.png"> </div>
+    <div style="--v: 6;"> <img src="./6.png"> </div>
+    <div style="--v: 7;"> <img src="./7.png"> </div>
+    <div style="--v: 8;"> <img src="./8.png"> </div>
+    
+</div>
+  <!-- <div class="bttn1">
+    <a href="#" class="log-in" style="text-decoration: none;color: beige;">Contact-us</a>
+    </div>
+    <div class="bttn1">
+
+  <a href="./home.html" class="log-in" style="text-decoration: none;color: beige;">Home</a>
+  </div> -->
+  <br><br>
+  <h1 style="color: white;margin-top: 60%;margin-left: -30%;">CLICK ON THE DOC TYPE .</h1>
+  <br><br><br>
+      
+      
+        <div class="cards">
+           <h1 id="card-1"> </h1>
+           <h1 id="card-2"></h1>
+           <h1 id="card-3"></h1>
+        </div>
+        <div class="headings">
+          <a href="" style="text-decoration: none;color: white;"> <h1>Text</h1></a>
+          <a href=""  style="text-decoration: none;color: white;"> <h1 style="margin-left: 255%;">PDF</h1></a>
+          <a href=""  style="text-decoration: none;color: white;"> <h1 style="margin-left: 555%;">Doc</h1></a>
+        </div>
+
+  
+  </body>
+  <script>
+    $(document).ready(function(){
+      $('.box div').click(function(){
+          if($(this).hasClass('spin')){
+          $('.box div').removeClass('spin');}
+        else{
+          $('.box div').removeClass('spin');
+          $(this).addClass('spin');
+        }
+      });
+    });
+  </script>
+</html>

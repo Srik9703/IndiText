@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiText</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400..700&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@600&family=Gloria+Hallelujah&family=Sacramento&display=swap" rel="stylesheet">    
+    <style>
+         .abril-fatface-regular {
+             font-family: "Abril Fatface", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .madimi-one-regular {
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .sacramento-regular {
+            font-family: "Sacramento", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .libre-bodoni-regular {
+            font-family: "Libre Bodoni", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+        }
+        .oxanium-regular {
+            font-family: "Oxanium", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .body
+        {
+            background-color: black;
+        }
+        .back-video{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 2s;
+        }
+        .back-video.fade-out {
+            opacity: 0;
+            transition: opacity 2s;
+        }
+        @media (min-aspect-ratio: 16/9){
+            .back-video
+            {
+                width: 100%;
+                height: auto;
+            }
+        }
+        @media (max-aspect-ratio: 16/9){
+            .back-video{
+                width: auto;
+                height:100%;
+            }
+        }
+        .content{
+            border: 2px solid #fff;
+            padding: 10px 10px 10px;
+            border-radius: 5%;
+            border-color: azure;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .logo img
+        {
+            float: left;
+            width: 10%;
+            height: 10%;
+            padding-bottom: 100%;
+        }
+        .container img
+        {
+            padding-top: 3%;
+            padding-right: 12%;
+        }
+        .container a
+        {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container
+        {
+            font-family: 'madimi-one-regular';
+            text-align: center;
+            color: #3AFF00;
+        }
+        .quote
+        {
+            width: 100%;
+            background-color: black;
+        }
+        .quote img
+        {
+            padding-top: 5%;
+            padding-left: 17%;
+            width: 50%;
+            align-items: center;
+        }
+        .steps img
+        {
+            width: 80%;
+            background-color: black;
+        }
+        .FAQ img
+        {
+            width: 100%;
+        }
+        .tie h1
+        {
+            text-align: center;
+            color: #fff;
+            padding-right: 7%;
+            font-family: 'libre-bodoni-regular';
+        }
+        .tie button
+        {
+            border-radius: 5%;
+            width: 50%;
+            border-left: 80%;
+            color: black;
+            
+        }
+        .main-contact
+        {
+            font-family: 'oxanium-regular';
+            color:#fff;
+        }
+        .flex-box
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        .flex-container{
+            display: flex;
+        }
+        .flex-container > div {
+            background-color: rgb(0, 0, 0);
+            margin-left: 10px;
+            width: 60%;
+            box-shadow: 1px 1px 8px black;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .chat img
+        {
+            width: 80%;
+        }
+    </style>
+  </head>
+  <body class="body"> 
+
+    <!--Logo-->
+    <div class="logo">
+        <img src="logo1.png">
+    </div>
+    <!--for bg video-->
+    <div class="video-container">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source
+          src="LaunchVideo.mp4"
+          type="video/mp4"
+        />
+      </video>
+   
+   <!--IndiText title-->
+    <div class="container">
+        <a href="./explore.html"><img src="title1.png" ></a>
+        <br>
+    </div>
+    <!--steps-->
+    <div class="steps">
+        <img src="upload.jpg">
+    </div>
+    <br><br>
+    <!--try it for yourself-->
+        <a href="./explore.html">
+            <button style="color: black;border-color: #fff;width: 35%; border-radius: 20%; align-items: center; margin-left: 25%;"><h1 style="font-family: 'libre-bodoni-regular';">Lets get started?</h1></button>
+        </a>
+    <!--try the new chat with PDF-->
+    <div class="chat">
+        <img src="chat2.png">
+        <a><img src="chat1.png" href="#chatbot"></a>
+    </div>
+    
+    <!--FAQ-->
+    <div class="FAQ">
+        <br><br><br><br>
+        <a href="./securityPolicy.html" target="_blank"><img src="FAQ1.png"></a>
+        <img src="FAQ2.png">
+    </div>
+    <!--Contact Us-->
+    <div class="main-content">
+        <h1 style="color: rgb(233, 226, 226);margin-left: 5%;margin-top: 10%;"><b><i>Contact Us:</i></b></h1>
+        
+        
+        <div class="flex-container">
+            <div style="padding-left: 10%;">
+                <h2><i><b style="color: #fff;">Phone :</b></i> <i style="color: #ffae00;">+1 234 567 890</i></h2>
+                <h2><i><b style="color: #fff;">E-Mail :</b>/i><i style="color: #ffae00;">inditext@mail.com</i></h2>
+                <h2><i><b style="color: #fff;">Address : </b></i><i style="color: #ffae00;">123 Main Street, City, Country</i></h2>
+            </div>
+            <div class="sec">
+                <h2 style="font-family: oxanium-regular; color: #fff;">Any queries? Ask us!</h2>
+                <input type="text" placeholder="Email" required>
+                <br>
+                <br>
+                <form id="queryForm" action="" method="post" onsubmit="submitQuery(event)">
+                    <textarea name="query" placeholder="Type your query here..." required></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+    <script>
+        function submitQuery(event) {
+        event.preventDefault(); 
+        window.location.href = window.location.href;
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+flask
+pyPDF2
+langdetect
+transformers
+langchain

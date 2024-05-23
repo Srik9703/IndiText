@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IndiText</title>
+</head>
+<link rel="stylesheet" href="./upload.css">
+<body>
+    <h1 style="text-align: center;">Upload a file in pdf format</h1>
+    <!-- <form action="/create" method="post">
+        <input type="text" name="name" placeholder="Enter item name" required>
+        <input type="submit" value="Create">
+    </form>
+    <h2>Items:</h2>
+    <ul>
+        {% for item in items %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>-->
+    <hr> 
+    <div class="d">
+    <div class="d1">
+    <h2>Upload File:</h2>
+    <form action="/upload" method="post" style="display: flex;flex-direction: column;" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <br>
+        <div class="d11" style="display: flex;">
+        <input type="submit" value="Upload" style="color: black;background-color: ghostwhite;padding: 4px;border-radius: 50px;" class="i">
+        <br>
+        <input type="reset" value="Reset" style="color: black;background-color: ghostwhite;padding: 4px;border-radius: 50px;" class="i">
+        </div>
+    </form>
+    </div>
+    <div class="d2">
+        <h2>Translated Text:</h2>
+        <p class="p1"></p>
+    </div>
+    </div>
+</body>
+</html
